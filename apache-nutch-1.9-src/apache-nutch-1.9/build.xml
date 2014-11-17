@@ -397,7 +397,7 @@
       <arg value="-outputDir"/>
       <arg value="/home/prashant/DirectedResearch/RawData"/>
       <arg value="-segment"/>
-      <arg value="/home/prashant/DirectedResearch/apache-nutch-1.9-src/apache-nutch-1.9/runtime/local/crawl/segments/"/>
+      <arg value="/home/prashant/DirectedResearch/segments/"/>
 <!--
       <arg value="-delay"/>
       <arg value="-200"/>
