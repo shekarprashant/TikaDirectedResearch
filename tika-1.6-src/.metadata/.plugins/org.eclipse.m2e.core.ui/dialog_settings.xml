@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="issueManagementUrl">
+			<item value="https://issues.apache.org/jira/browse/TIKA"/>
+		</list>
+		<list key="issueManagementSystem">
+			<item value="JIRA"/>
+		</list>
+		<list key="ciManagementUrl">
+			<item value="https://builds.apache.org/job/Tika-trunk/"/>
+		</list>
+		<list key="ciManagementSystem">
+			<item value="Jenkins"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

@@ -1,0 +1,4 @@
+org\apache\tika\mime\Patterns$1.class
+org\apache\tika\extractor\ParserContainerExtractor$1.class
+org\apache\tika\language\LanguageProfile$1.class
+org\apache\tika\detect\XmlRootExtractor$1.class

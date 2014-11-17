@@ -1,0 +1,12 @@
+Nov 13, 2014 4:42:35 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/meta
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@345ac4dc9 pairs: {PUT /meta HTTP/1.1: null}{Content-Type: application/msword}{Accept: text/csv}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:35 PM org.apache.tika.server.TikaResource logRequest
+INFO: meta (application/msword)
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@88aa8d35 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/csv}{Date: Fri, 14 Nov 2014 00:42:35 GMT}{Transfer-Encoding: chunked}{Server: Jetty(8.1.14.v20131031)}

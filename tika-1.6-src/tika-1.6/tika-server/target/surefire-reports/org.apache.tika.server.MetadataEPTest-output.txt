@@ -1,0 +1,157 @@
+Nov 13, 2014 4:42:34 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/metadata/Author
+Nov 13, 2014 4:42:34 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/detect/stream)
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@1cc3f2079 pairs: {POST /metadata/Author HTTP/1.1: null}{Content-Type: application/msword}{Accept: text/plain}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:34 PM org.apache.tika.server.TikaResource logRequest
+INFO: metadata/Author (application/msword)
+Nov 13, 2014 4:42:34 PM sun.net.www.http.HttpClient parseHTTPHeader
+FINEST: KeepAlive stream used: http://localhost:9998/metadata/Author
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@286d11a45 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/plain}{Date: Fri, 14 Nov 2014 00:42:34 GMT}{Content-Length: 16}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:34 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/metadata
+Nov 13, 2014 4:42:34 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/metadata/Author)
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@6314941a9 pairs: {POST /metadata HTTP/1.1: null}{Content-Type: application/msword}{Accept: application/json}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:34 PM org.apache.tika.server.TikaResource logRequest
+INFO: metadata (application/msword)
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@a3e02445 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json}{Date: Fri, 14 Nov 2014 00:42:34 GMT}{Transfer-Encoding: chunked}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:34 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/metadata/Author
+Nov 13, 2014 4:42:34 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/metadata)
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@4a84ccda9 pairs: {POST /metadata/Author HTTP/1.1: null}{Content-Type: application/msword}{Accept: application/json}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:35 PM org.apache.tika.server.TikaResource logRequest
+INFO: metadata/Author (application/msword)
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@47e484595 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json}{Date: Fri, 14 Nov 2014 00:42:35 GMT}{Transfer-Encoding: chunked}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:35 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/metadata/Author
+Nov 13, 2014 4:42:35 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/metadata/Author)
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@78b32b939 pairs: {POST /metadata/Author HTTP/1.1: null}{Content-Type: application/msword}{Accept: text/plain}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:35 PM org.apache.tika.server.TikaResource logRequest
+INFO: metadata/Author (application/msword)
+Nov 13, 2014 4:42:35 PM sun.net.www.http.HttpClient parseHTTPHeader
+FINEST: KeepAlive stream used: http://localhost:9998/metadata/Author
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@7dd295de5 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/plain}{Date: Fri, 14 Nov 2014 00:42:35 GMT}{Content-Length: 16}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:35 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/metadata/Author
+Nov 13, 2014 4:42:35 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/metadata/Author)
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@1df1bffd9 pairs: {POST /metadata/Author HTTP/1.1: null}{Content-Type: application/msword}{Accept: text/plain}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:35 PM org.apache.tika.server.TikaResource logRequest
+INFO: metadata/Author (application/msword)
+Nov 13, 2014 4:42:35 PM org.apache.tika.server.MetadataEP getSimpleMetadataField
+INFO: Failed to process field Author
+org.apache.tika.exception.TikaException: Unexpected RuntimeException from org.apache.tika.parser.microsoft.OfficeParser@42c126c5
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:246)
+	at org.apache.tika.parser.ParserDecorator.parse(ParserDecorator.java:91)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:244)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:121)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:137)
+	at org.apache.tika.server.MetadataEP.getSimpleMetadataField(MetadataEP.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:205)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:102)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.serviceRequest(JettyHTTPDestination.java:355)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:319)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:72)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1088)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1024)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:957)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.IndexOutOfBoundsException: Block 15 not found - java.lang.IndexOutOfBoundsException: Unable to read 512 bytes from 8192 in stream of length 8000
+	at org.apache.poi.poifs.filesystem.NPOIFSFileSystem.getBlockAt(NPOIFSFileSystem.java:441)
+	at org.apache.poi.poifs.filesystem.NPOIFSStream$StreamBlockByteBufferIterator.next(NPOIFSStream.java:169)
+	at org.apache.poi.poifs.filesystem.NPOIFSStream$StreamBlockByteBufferIterator.next(NPOIFSStream.java:142)
+	at org.apache.poi.poifs.property.NPropertyTable.buildProperties(NPropertyTable.java:87)
+	at org.apache.poi.poifs.property.NPropertyTable.<init>(NPropertyTable.java:66)
+	at org.apache.poi.poifs.filesystem.NPOIFSFileSystem.readCoreContents(NPOIFSFileSystem.java:395)
+	at org.apache.poi.poifs.filesystem.NPOIFSFileSystem.<init>(NPOIFSFileSystem.java:303)
+	at org.apache.tika.parser.microsoft.OfficeParser.parse(OfficeParser.java:164)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:244)
+	... 37 more
+
+Nov 13, 2014 4:42:35 PM sun.net.www.http.HttpClient parseHTTPHeader
+FINEST: KeepAlive stream used: http://localhost:9998/metadata/Author
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@753bb6965 pairs: {null: HTTP/1.1 400 Bad Request}{Content-Type: text/plain}{Date: Fri, 14 Nov 2014 00:42:35 GMT}{Content-Length: 35}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:35 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/metadata
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@9206d809 pairs: {POST /metadata HTTP/1.1: null}{Content-Type: application/msword}{Accept: text/csv}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:35 PM org.apache.tika.server.TikaResource logRequest
+INFO: metadata (application/msword)
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@2e5015be5 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/csv}{Date: Fri, 14 Nov 2014 00:42:35 GMT}{Transfer-Encoding: chunked}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:35 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/metadata/xxx
+Nov 13, 2014 4:42:35 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/metadata)
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@1fe4ebe99 pairs: {POST /metadata/xxx HTTP/1.1: null}{Content-Type: application/msword}{Accept: application/json}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:35 PM org.apache.tika.server.TikaResource logRequest
+INFO: metadata/xxx (application/msword)
+Nov 13, 2014 4:42:35 PM sun.net.www.http.HttpClient parseHTTPHeader
+FINEST: KeepAlive stream used: http://localhost:9998/metadata/xxx
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@7047db5e5 pairs: {null: HTTP/1.1 404 Not Found}{Content-Type: application/json}{Date: Fri, 14 Nov 2014 00:42:35 GMT}{Content-Length: 32}{Server: Jetty(8.1.14.v20131031)}

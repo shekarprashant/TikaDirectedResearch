@@ -1,0 +1,4 @@
+org\apache\tika\example\TestParsingExample.class
+org\apache\tika\example\TranslatorExampleTest.class
+org\apache\tika\example\LanguageIdentifierExampleTest.class
+org\apache\tika\example\ContentHandlerExampleTest.class

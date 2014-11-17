@@ -1,0 +1,3 @@
+org\apache\tika\metadata\serialization\JsonMetadata.class
+org\apache\tika\metadata\serialization\JsonMetadataSerializer.class
+org\apache\tika\metadata\serialization\JsonMetadataDeserializer.class

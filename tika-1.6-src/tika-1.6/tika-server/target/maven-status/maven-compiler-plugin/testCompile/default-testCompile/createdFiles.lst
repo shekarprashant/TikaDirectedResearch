@@ -1,0 +1,11 @@
+org\apache\tika\server\TikaParsersTest.class
+org\apache\tika\server\TikaMimeTypesTest.class
+org\apache\tika\server\TikaWelcomeTest.class
+org\apache\tika\server\UnpackerResourceTest.class
+org\apache\tika\server\TikaVersionTest.class
+org\apache\tika\server\CXFTestBase.class
+org\apache\tika\server\MetadataResourceTest.class
+org\apache\tika\server\MetadataEPTest.class
+org\apache\tika\server\TikaDetectorsTest.class
+org\apache\tika\server\DetectorResourceTest.class
+org\apache\tika\server\TikaResourceTest.class

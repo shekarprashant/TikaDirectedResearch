@@ -1,0 +1,5 @@
+org\apache\tika\example\TranslatorExample.class
+org\apache\tika\example\ContentHandlerExample.class
+org\apache\tika\example\ContentHandlerExample$1.class
+org\apache\tika\example\ParsingExample.class
+org\apache\tika\example\LanguageIdentifierExample.class

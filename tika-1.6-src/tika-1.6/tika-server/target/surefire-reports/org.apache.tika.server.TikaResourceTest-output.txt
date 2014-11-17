@@ -1,0 +1,548 @@
+Nov 13, 2014 4:42:36 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:36 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/tika
+Nov 13, 2014 4:42:36 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/parsers/details)
+Nov 13, 2014 4:42:36 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:36 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@b1304d89 pairs: {PUT /tika HTTP/1.1: null}{Content-Type: application/msword}{Accept: text/plain}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:36 PM org.apache.tika.server.TikaResource logRequest
+INFO: tika (application/msword)
+Nov 13, 2014 4:42:36 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@420e26c05 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/plain}{Date: Fri, 14 Nov 2014 00:42:36 GMT}{Transfer-Encoding: chunked}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:36 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:36 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/tika
+Nov 13, 2014 4:42:36 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/tika)
+Nov 13, 2014 4:42:36 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:36 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@74bcbb519 pairs: {PUT /tika HTTP/1.1: null}{Content-Type: application/vnd.ms-excel}{Accept: text/xml}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:36 PM org.apache.tika.server.TikaResource logRequest
+INFO: tika (application/vnd.ms-excel)
+Nov 13, 2014 4:42:37 PM org.apache.tika.server.TikaResource$4 write
+WARNING: tika: Encrypted document
+org.apache.tika.exception.EncryptedDocumentException: Unable to process: document is encrypted
+	at org.apache.tika.parser.microsoft.ExcelExtractor$TikaHSSFListener.processFile(ExcelExtractor.java:301)
+	at org.apache.tika.parser.microsoft.ExcelExtractor.parse(ExcelExtractor.java:151)
+	at org.apache.tika.parser.microsoft.OfficeParser.parse(OfficeParser.java:207)
+	at org.apache.tika.parser.microsoft.OfficeParser.parse(OfficeParser.java:167)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:244)
+	at org.apache.tika.parser.ParserDecorator.parse(ParserDecorator.java:91)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:244)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:121)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:137)
+	at org.apache.tika.server.TikaResource$4.write(TikaResource.java:302)
+	at org.apache.cxf.jaxrs.provider.BinaryDataProvider.writeTo(BinaryDataProvider.java:118)
+	at org.apache.cxf.jaxrs.utils.JAXRSUtils.writeMessageBody(JAXRSUtils.java:1317)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.serializeMessage(JAXRSOutInterceptor.java:284)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.processResponse(JAXRSOutInterceptor.java:157)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.handleMessage(JAXRSOutInterceptor.java:86)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.interceptor.OutgoingChainInterceptor.handleMessage(OutgoingChainInterceptor.java:77)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.serviceRequest(JettyHTTPDestination.java:355)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:319)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:72)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1088)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1024)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:957)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.apache.poi.EncryptedDocumentException: Default password is invalid for salt/verifier/verifierHash
+	at org.apache.poi.hssf.record.RecordFactoryInputStream$StreamEncryptionInfo.createDecryptingStream(RecordFactoryInputStream.java:127)
+	at org.apache.poi.hssf.record.RecordFactoryInputStream.<init>(RecordFactoryInputStream.java:209)
+	at org.apache.poi.hssf.eventusermodel.HSSFEventFactory.genericProcessEvents(HSSFEventFactory.java:136)
+	at org.apache.poi.hssf.eventusermodel.HSSFEventFactory.processEvents(HSSFEventFactory.java:103)
+	at org.apache.tika.parser.microsoft.ExcelExtractor$TikaHSSFListener.processFile(ExcelExtractor.java:299)
+	... 38 more
+
+Nov 13, 2014 4:42:37 PM org.apache.cxf.jaxrs.impl.WebApplicationExceptionMapper toResponse
+WARNING: javax.ws.rs.WebApplicationException: org.apache.tika.exception.EncryptedDocumentException: Unable to process: document is encrypted
+	at org.apache.tika.server.TikaResource$4.write(TikaResource.java:313)
+	at org.apache.cxf.jaxrs.provider.BinaryDataProvider.writeTo(BinaryDataProvider.java:118)
+	at org.apache.cxf.jaxrs.utils.JAXRSUtils.writeMessageBody(JAXRSUtils.java:1317)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.serializeMessage(JAXRSOutInterceptor.java:284)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.processResponse(JAXRSOutInterceptor.java:157)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.handleMessage(JAXRSOutInterceptor.java:86)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.interceptor.OutgoingChainInterceptor.handleMessage(OutgoingChainInterceptor.java:77)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.serviceRequest(JettyHTTPDestination.java:355)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:319)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:72)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1088)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1024)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:957)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.apache.tika.exception.EncryptedDocumentException: Unable to process: document is encrypted
+	at org.apache.tika.parser.microsoft.ExcelExtractor$TikaHSSFListener.processFile(ExcelExtractor.java:301)
+	at org.apache.tika.parser.microsoft.ExcelExtractor.parse(ExcelExtractor.java:151)
+	at org.apache.tika.parser.microsoft.OfficeParser.parse(OfficeParser.java:207)
+	at org.apache.tika.parser.microsoft.OfficeParser.parse(OfficeParser.java:167)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:244)
+	at org.apache.tika.parser.ParserDecorator.parse(ParserDecorator.java:91)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:244)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:121)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:137)
+	at org.apache.tika.server.TikaResource$4.write(TikaResource.java:302)
+	... 29 more
+Caused by: org.apache.poi.EncryptedDocumentException: Default password is invalid for salt/verifier/verifierHash
+	at org.apache.poi.hssf.record.RecordFactoryInputStream$StreamEncryptionInfo.createDecryptingStream(RecordFactoryInputStream.java:127)
+	at org.apache.poi.hssf.record.RecordFactoryInputStream.<init>(RecordFactoryInputStream.java:209)
+	at org.apache.poi.hssf.eventusermodel.HSSFEventFactory.genericProcessEvents(HSSFEventFactory.java:136)
+	at org.apache.poi.hssf.eventusermodel.HSSFEventFactory.processEvents(HSSFEventFactory.java:103)
+	at org.apache.tika.parser.microsoft.ExcelExtractor$TikaHSSFListener.processFile(ExcelExtractor.java:299)
+	... 38 more
+
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@726d32423 pairs: {null: HTTP/1.1 422 Unprocessable Entity}{Content-Length: 0}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:37 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/tika?_wadl
+Nov 13, 2014 4:42:37 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/tika)
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@1783d4548 pairs: {GET /tika?_wadl HTTP/1.1: null}{Content-Type: */*}{Accept: text/plain}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}
+Nov 13, 2014 4:42:37 PM sun.net.www.http.HttpClient parseHTTPHeader
+FINEST: KeepAlive stream used: http://localhost:9998/tika?_wadl
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@3eec3af55 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/xml}{Date: Fri, 14 Nov 2014 00:42:37 GMT}{Content-Length: 1363}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:37 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/tika
+Nov 13, 2014 4:42:37 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/tika?_wadl)
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@41c47da99 pairs: {PUT /tika HTTP/1.1: null}{Content-Type: application/vnd.ms-excel}{Accept: text/html}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:37 PM org.apache.tika.server.TikaResource logRequest
+INFO: tika (application/vnd.ms-excel)
+Nov 13, 2014 4:42:37 PM org.apache.tika.server.TikaResource$4 write
+WARNING: tika: Encrypted document
+org.apache.tika.exception.EncryptedDocumentException: Unable to process: document is encrypted
+	at org.apache.tika.parser.microsoft.ExcelExtractor$TikaHSSFListener.processFile(ExcelExtractor.java:301)
+	at org.apache.tika.parser.microsoft.ExcelExtractor.parse(ExcelExtractor.java:151)
+	at org.apache.tika.parser.microsoft.OfficeParser.parse(OfficeParser.java:207)
+	at org.apache.tika.parser.microsoft.OfficeParser.parse(OfficeParser.java:167)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:244)
+	at org.apache.tika.parser.ParserDecorator.parse(ParserDecorator.java:91)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:244)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:121)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:137)
+	at org.apache.tika.server.TikaResource$4.write(TikaResource.java:302)
+	at org.apache.cxf.jaxrs.provider.BinaryDataProvider.writeTo(BinaryDataProvider.java:118)
+	at org.apache.cxf.jaxrs.utils.JAXRSUtils.writeMessageBody(JAXRSUtils.java:1317)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.serializeMessage(JAXRSOutInterceptor.java:284)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.processResponse(JAXRSOutInterceptor.java:157)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.handleMessage(JAXRSOutInterceptor.java:86)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.interceptor.OutgoingChainInterceptor.handleMessage(OutgoingChainInterceptor.java:77)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.serviceRequest(JettyHTTPDestination.java:355)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:319)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:72)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1088)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1024)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:957)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.apache.poi.EncryptedDocumentException: Default password is invalid for salt/verifier/verifierHash
+	at org.apache.poi.hssf.record.RecordFactoryInputStream$StreamEncryptionInfo.createDecryptingStream(RecordFactoryInputStream.java:127)
+	at org.apache.poi.hssf.record.RecordFactoryInputStream.<init>(RecordFactoryInputStream.java:209)
+	at org.apache.poi.hssf.eventusermodel.HSSFEventFactory.genericProcessEvents(HSSFEventFactory.java:136)
+	at org.apache.poi.hssf.eventusermodel.HSSFEventFactory.processEvents(HSSFEventFactory.java:103)
+	at org.apache.tika.parser.microsoft.ExcelExtractor$TikaHSSFListener.processFile(ExcelExtractor.java:299)
+	... 38 more
+
+Nov 13, 2014 4:42:37 PM org.apache.cxf.jaxrs.impl.WebApplicationExceptionMapper toResponse
+WARNING: javax.ws.rs.WebApplicationException: org.apache.tika.exception.EncryptedDocumentException: Unable to process: document is encrypted
+	at org.apache.tika.server.TikaResource$4.write(TikaResource.java:313)
+	at org.apache.cxf.jaxrs.provider.BinaryDataProvider.writeTo(BinaryDataProvider.java:118)
+	at org.apache.cxf.jaxrs.utils.JAXRSUtils.writeMessageBody(JAXRSUtils.java:1317)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.serializeMessage(JAXRSOutInterceptor.java:284)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.processResponse(JAXRSOutInterceptor.java:157)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.handleMessage(JAXRSOutInterceptor.java:86)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.interceptor.OutgoingChainInterceptor.handleMessage(OutgoingChainInterceptor.java:77)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.serviceRequest(JettyHTTPDestination.java:355)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:319)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:72)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1088)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1024)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:957)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.apache.tika.exception.EncryptedDocumentException: Unable to process: document is encrypted
+	at org.apache.tika.parser.microsoft.ExcelExtractor$TikaHSSFListener.processFile(ExcelExtractor.java:301)
+	at org.apache.tika.parser.microsoft.ExcelExtractor.parse(ExcelExtractor.java:151)
+	at org.apache.tika.parser.microsoft.OfficeParser.parse(OfficeParser.java:207)
+	at org.apache.tika.parser.microsoft.OfficeParser.parse(OfficeParser.java:167)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:244)
+	at org.apache.tika.parser.ParserDecorator.parse(ParserDecorator.java:91)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:244)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:121)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:137)
+	at org.apache.tika.server.TikaResource$4.write(TikaResource.java:302)
+	... 29 more
+Caused by: org.apache.poi.EncryptedDocumentException: Default password is invalid for salt/verifier/verifierHash
+	at org.apache.poi.hssf.record.RecordFactoryInputStream$StreamEncryptionInfo.createDecryptingStream(RecordFactoryInputStream.java:127)
+	at org.apache.poi.hssf.record.RecordFactoryInputStream.<init>(RecordFactoryInputStream.java:209)
+	at org.apache.poi.hssf.eventusermodel.HSSFEventFactory.genericProcessEvents(HSSFEventFactory.java:136)
+	at org.apache.poi.hssf.eventusermodel.HSSFEventFactory.processEvents(HSSFEventFactory.java:103)
+	at org.apache.tika.parser.microsoft.ExcelExtractor$TikaHSSFListener.processFile(ExcelExtractor.java:299)
+	... 38 more
+
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@3568c7a13 pairs: {null: HTTP/1.1 422 Unprocessable Entity}{Content-Length: 0}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:37 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/tika
+Nov 13, 2014 4:42:37 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/tika)
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@2e31fbb69 pairs: {PUT /tika HTTP/1.1: null}{Content-Type: application/msword}{Accept: text/html}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:37 PM org.apache.tika.server.TikaResource logRequest
+INFO: tika (application/msword)
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@7e81d27a5 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/html}{Date: Fri, 14 Nov 2014 00:42:37 GMT}{Transfer-Encoding: chunked}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:37 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/tika
+Nov 13, 2014 4:42:37 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/tika)
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@cd6cecb9 pairs: {PUT /tika HTTP/1.1: null}{Content-Type: application/vnd.ms-excel}{Accept: text/plain}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:37 PM org.apache.tika.server.TikaResource logRequest
+INFO: tika (application/vnd.ms-excel)
+Nov 13, 2014 4:42:37 PM org.apache.tika.server.TikaResource$3 write
+WARNING: tika: Encrypted document
+org.apache.tika.exception.EncryptedDocumentException: Unable to process: document is encrypted
+	at org.apache.tika.parser.microsoft.ExcelExtractor$TikaHSSFListener.processFile(ExcelExtractor.java:301)
+	at org.apache.tika.parser.microsoft.ExcelExtractor.parse(ExcelExtractor.java:151)
+	at org.apache.tika.parser.microsoft.OfficeParser.parse(OfficeParser.java:207)
+	at org.apache.tika.parser.microsoft.OfficeParser.parse(OfficeParser.java:167)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:244)
+	at org.apache.tika.parser.ParserDecorator.parse(ParserDecorator.java:91)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:244)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:121)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:137)
+	at org.apache.tika.server.TikaResource$3.write(TikaResource.java:203)
+	at org.apache.cxf.jaxrs.provider.BinaryDataProvider.writeTo(BinaryDataProvider.java:118)
+	at org.apache.cxf.jaxrs.utils.JAXRSUtils.writeMessageBody(JAXRSUtils.java:1317)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.serializeMessage(JAXRSOutInterceptor.java:284)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.processResponse(JAXRSOutInterceptor.java:157)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.handleMessage(JAXRSOutInterceptor.java:86)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.interceptor.OutgoingChainInterceptor.handleMessage(OutgoingChainInterceptor.java:77)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.serviceRequest(JettyHTTPDestination.java:355)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:319)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:72)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1088)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1024)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:957)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.apache.poi.EncryptedDocumentException: Default password is invalid for salt/verifier/verifierHash
+	at org.apache.poi.hssf.record.RecordFactoryInputStream$StreamEncryptionInfo.createDecryptingStream(RecordFactoryInputStream.java:127)
+	at org.apache.poi.hssf.record.RecordFactoryInputStream.<init>(RecordFactoryInputStream.java:209)
+	at org.apache.poi.hssf.eventusermodel.HSSFEventFactory.genericProcessEvents(HSSFEventFactory.java:136)
+	at org.apache.poi.hssf.eventusermodel.HSSFEventFactory.processEvents(HSSFEventFactory.java:103)
+	at org.apache.tika.parser.microsoft.ExcelExtractor$TikaHSSFListener.processFile(ExcelExtractor.java:299)
+	... 38 more
+
+Nov 13, 2014 4:42:37 PM org.apache.cxf.jaxrs.impl.WebApplicationExceptionMapper toResponse
+WARNING: javax.ws.rs.WebApplicationException: org.apache.tika.exception.EncryptedDocumentException: Unable to process: document is encrypted
+	at org.apache.tika.server.TikaResource$3.write(TikaResource.java:213)
+	at org.apache.cxf.jaxrs.provider.BinaryDataProvider.writeTo(BinaryDataProvider.java:118)
+	at org.apache.cxf.jaxrs.utils.JAXRSUtils.writeMessageBody(JAXRSUtils.java:1317)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.serializeMessage(JAXRSOutInterceptor.java:284)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.processResponse(JAXRSOutInterceptor.java:157)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSOutInterceptor.handleMessage(JAXRSOutInterceptor.java:86)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.interceptor.OutgoingChainInterceptor.handleMessage(OutgoingChainInterceptor.java:77)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.serviceRequest(JettyHTTPDestination.java:355)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:319)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:72)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1088)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1024)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:957)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.apache.tika.exception.EncryptedDocumentException: Unable to process: document is encrypted
+	at org.apache.tika.parser.microsoft.ExcelExtractor$TikaHSSFListener.processFile(ExcelExtractor.java:301)
+	at org.apache.tika.parser.microsoft.ExcelExtractor.parse(ExcelExtractor.java:151)
+	at org.apache.tika.parser.microsoft.OfficeParser.parse(OfficeParser.java:207)
+	at org.apache.tika.parser.microsoft.OfficeParser.parse(OfficeParser.java:167)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:244)
+	at org.apache.tika.parser.ParserDecorator.parse(ParserDecorator.java:91)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:244)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:121)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:137)
+	at org.apache.tika.server.TikaResource$3.write(TikaResource.java:203)
+	... 29 more
+Caused by: org.apache.poi.EncryptedDocumentException: Default password is invalid for salt/verifier/verifierHash
+	at org.apache.poi.hssf.record.RecordFactoryInputStream$StreamEncryptionInfo.createDecryptingStream(RecordFactoryInputStream.java:127)
+	at org.apache.poi.hssf.record.RecordFactoryInputStream.<init>(RecordFactoryInputStream.java:209)
+	at org.apache.poi.hssf.eventusermodel.HSSFEventFactory.genericProcessEvents(HSSFEventFactory.java:136)
+	at org.apache.poi.hssf.eventusermodel.HSSFEventFactory.processEvents(HSSFEventFactory.java:103)
+	at org.apache.tika.parser.microsoft.ExcelExtractor$TikaHSSFListener.processFile(ExcelExtractor.java:299)
+	... 38 more
+
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@1a9a3a953 pairs: {null: HTTP/1.1 422 Unprocessable Entity}{Content-Length: 0}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:37 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/tika
+Nov 13, 2014 4:42:37 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/tika)
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@21e66f2a9 pairs: {PUT /tika HTTP/1.1: null}{Content-Type: application/msword}{Accept: text/xml}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:37 PM org.apache.tika.server.TikaResource logRequest
+INFO: tika (application/msword)
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@71950f325 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/xml}{Date: Fri, 14 Nov 2014 00:42:37 GMT}{Transfer-Encoding: chunked}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:37 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: load HOME
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: new MailcapFile: file C:\Users\Prasanth\.mailcap
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: load SYS
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: new MailcapFile: file C:\Program Files\Java\jdk1.7.0_10\jre\lib\mailcap
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: load JAR
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: getResources
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: URL jar:file:/C:/Users/Prasanth/.m2/repository/org/apache/geronimo/specs/geronimo-javamail_1.4_spec/1.7.1/geronimo-javamail_1.4_spec-1.7.1.jar!/META-INF/mailcap
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: new MailcapFile: InputStream
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: parse: text/plain;;		x-java-content-handler=org.apache.geronimo.mail.handlers.TextHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:   Type: text/plain
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:     Command: content-handler, Class: org.apache.geronimo.mail.handlers.TextHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: parse: text/xml;;		x-java-content-handler=org.apache.geronimo.mail.handlers.XMLHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:   Type: text/xml
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:     Command: content-handler, Class: org.apache.geronimo.mail.handlers.XMLHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: parse: text/html;;		x-java-content-handler=org.apache.geronimo.mail.handlers.HtmlHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:   Type: text/html
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:     Command: content-handler, Class: org.apache.geronimo.mail.handlers.HtmlHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: parse: message/rfc822;;	x-java-content-handler=org.apache.geronimo.mail.handlers.MessageHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:   Type: message/rfc822
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:     Command: content-handler, Class: org.apache.geronimo.mail.handlers.MessageHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: parse: multipart/*;;		x-java-content-handler=org.apache.geronimo.mail.handlers.MultipartHandler; x-java-fallback-entry=true
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:   Type: multipart/*
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:     Command: content-handler, Class: org.apache.geronimo.mail.handlers.MultipartHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: successfully loaded mailcap file from URL: jar:file:/C:/Users/Prasanth/.m2/repository/org/apache/geronimo/specs/geronimo-javamail_1.4_spec/1.7.1/geronimo-javamail_1.4_spec-1.7.1.jar!/META-INF/mailcap
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: load DEF
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: not loading mailcap file: /META-INF/mailcap.default
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: load HOME
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: new MailcapFile: file C:\Users\Prasanth\.mailcap
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: load SYS
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: new MailcapFile: file C:\Program Files\Java\jdk1.7.0_10\jre\lib\mailcap
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: load JAR
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: getResources
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: URL jar:file:/C:/Users/Prasanth/.m2/repository/org/apache/geronimo/specs/geronimo-javamail_1.4_spec/1.7.1/geronimo-javamail_1.4_spec-1.7.1.jar!/META-INF/mailcap
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: new MailcapFile: InputStream
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: parse: text/plain;;		x-java-content-handler=org.apache.geronimo.mail.handlers.TextHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:   Type: text/plain
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:     Command: content-handler, Class: org.apache.geronimo.mail.handlers.TextHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: parse: text/xml;;		x-java-content-handler=org.apache.geronimo.mail.handlers.XMLHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:   Type: text/xml
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:     Command: content-handler, Class: org.apache.geronimo.mail.handlers.XMLHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: parse: text/html;;		x-java-content-handler=org.apache.geronimo.mail.handlers.HtmlHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:   Type: text/html
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:     Command: content-handler, Class: org.apache.geronimo.mail.handlers.HtmlHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: parse: message/rfc822;;	x-java-content-handler=org.apache.geronimo.mail.handlers.MessageHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:   Type: message/rfc822
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:     Command: content-handler, Class: org.apache.geronimo.mail.handlers.MessageHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: parse: multipart/*;;		x-java-content-handler=org.apache.geronimo.mail.handlers.MultipartHandler; x-java-fallback-entry=true
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:   Type: multipart/*
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:     Command: content-handler, Class: org.apache.geronimo.mail.handlers.MultipartHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: successfully loaded mailcap file from URL: jar:file:/C:/Users/Prasanth/.m2/repository/org/apache/geronimo/specs/geronimo-javamail_1.4_spec/1.7.1/geronimo-javamail_1.4_spec-1.7.1.jar!/META-INF/mailcap
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: load DEF
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: not loading mailcap file: /META-INF/mailcap.default
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: MailcapCommandMap: add to PROG
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: new MailcapFile: default
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: appendToMailcap: image/*;;x-java-content-handler=org.apache.cxf.attachment.ImageDataContentHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE: parse: image/*;;x-java-content-handler=org.apache.cxf.attachment.ImageDataContentHandler
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:   Type: image/*
+Nov 13, 2014 4:42:37 PM com.sun.activation.registries.LogSupport log
+FINE:     Command: content-handler, Class: org.apache.cxf.attachment.ImageDataContentHandler
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/tika/form
+Nov 13, 2014 4:42:37 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/tika)
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:37 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@486f49509 pairs: {PUT /tika/form HTTP/1.1: null}{Content-Type: multipart/form-data; boundary="uuid:a50fb054-8af5-456f-b496-67a8af1476bf"}{Accept: text/xml}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:38 PM org.apache.tika.server.TikaResource logRequest
+INFO: tika/form (application/msword)
+Nov 13, 2014 4:42:38 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@2e5851915 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/xml}{Date: Fri, 14 Nov 2014 00:42:38 GMT}{Transfer-Encoding: chunked}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:38 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:38 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/tika
+Nov 13, 2014 4:42:38 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/tika/form)
+Nov 13, 2014 4:42:38 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:38 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@57cc488d8 pairs: {GET /tika HTTP/1.1: null}{Content-Type: text/plain}{Accept: text/plain}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}
+Nov 13, 2014 4:42:38 PM sun.net.www.http.HttpClient parseHTTPHeader
+FINEST: KeepAlive stream used: http://localhost:9998/tika
+Nov 13, 2014 4:42:38 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@712ab9c55 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/plain}{Date: Fri, 14 Nov 2014 00:42:38 GMT}{Content-Length: 32}{Server: Jetty(8.1.14.v20131031)}

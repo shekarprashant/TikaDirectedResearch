@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1416199905308_1" label="tika" name="tika">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tika-parent" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tika-core" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tika-parsers" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tika-xmp" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tika-serialization" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tika-app" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tika-bundle" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tika-server" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tika-translate" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tika-example" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tika-java7" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1416199872986_0" label="Window Working Set" name="Aggregate for window 1416199872985"/>
+</workingSetManager>

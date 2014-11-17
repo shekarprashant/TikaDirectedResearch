@@ -1,0 +1,47 @@
+Nov 13, 2014 4:42:32 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Nov 13, 2014 4:42:33 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/detect/stream
+Nov 13, 2014 4:42:33 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:33 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@6c64e55310 pairs: {PUT /detect/stream HTTP/1.1: null}{Content-Type: text/csv}{Accept: */*}{Content-Disposition: attachment; filename=CDEC_WEATHER_2010_03_02}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:33 PM org.apache.tika.server.DetectorResource detect
+INFO: Detecting media type for Filename: CDEC_WEATHER_2010_03_02
+Nov 13, 2014 4:42:34 PM sun.net.www.http.HttpClient parseHTTPHeader
+FINEST: KeepAlive stream used: http://localhost:9998/detect/stream
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@658e13635 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/plain}{Date: Fri, 14 Nov 2014 00:42:34 GMT}{Content-Length: 10}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/detect/stream
+Nov 13, 2014 4:42:34 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/detect/stream)
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@177bdd2310 pairs: {PUT /detect/stream HTTP/1.1: null}{Content-Type: text/csv}{Accept: */*}{Content-Disposition: attachment; filename=CDEC_WEATHER_2010_03_02.csv}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Transfer-Encoding: chunked}
+Nov 13, 2014 4:42:34 PM org.apache.tika.server.DetectorResource detect
+INFO: Detecting media type for Filename: CDEC_WEATHER_2010_03_02.csv
+Nov 13, 2014 4:42:34 PM sun.net.www.http.HttpClient parseHTTPHeader
+FINEST: KeepAlive stream used: http://localhost:9998/detect/stream
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@5b0aeba95 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/plain}{Date: Fri, 14 Nov 2014 00:42:34 GMT}{Content-Length: 8}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:34 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/detect/stream
+Nov 13, 2014 4:42:34 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/detect/stream)
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@2b22a36310 pairs: {PUT /detect/stream HTTP/1.1: null}{Content-Type: text/csv}{Accept: */*}{Content-Disposition: attachment; filename=foo.csv}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}{Content-Length: 78}
+Nov 13, 2014 4:42:34 PM org.apache.tika.server.DetectorResource detect
+INFO: Detecting media type for Filename: foo.csv
+Nov 13, 2014 4:42:34 PM sun.net.www.http.HttpClient parseHTTPHeader
+FINEST: KeepAlive stream used: http://localhost:9998/detect/stream
+Nov 13, 2014 4:42:34 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@3f0ec4655 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/plain}{Date: Fri, 14 Nov 2014 00:42:34 GMT}{Content-Length: 8}{Server: Jetty(8.1.14.v20131031)}

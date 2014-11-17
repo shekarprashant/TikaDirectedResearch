@@ -1,0 +1,42 @@
+Nov 13, 2014 4:42:35 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/detectors
+Nov 13, 2014 4:42:35 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/meta)
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@545652f98 pairs: {GET /detectors HTTP/1.1: null}{Content-Type: text/plain}{Accept: text/plain}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}
+Nov 13, 2014 4:42:35 PM sun.net.www.http.HttpClient parseHTTPHeader
+FINEST: KeepAlive stream used: http://localhost:9998/detectors
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@6ca464995 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/plain}{Date: Fri, 14 Nov 2014 00:42:35 GMT}{Content-Length: 235}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:35 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/detectors
+Nov 13, 2014 4:42:35 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/detectors)
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@5442b4558 pairs: {GET /detectors HTTP/1.1: null}{Content-Type: text/html}{Accept: text/html}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}
+Nov 13, 2014 4:42:35 PM sun.net.www.http.HttpClient parseHTTPHeader
+FINEST: KeepAlive stream used: http://localhost:9998/detectors
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@9ca62e25 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/html}{Date: Fri, 14 Nov 2014 00:42:35 GMT}{Content-Length: 1607}{Server: Jetty(8.1.14.v20131031)}
+Nov 13, 2014 4:42:35 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/detectors
+Nov 13, 2014 4:42:35 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/detectors)
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@70f0acec8 pairs: {GET /detectors HTTP/1.1: null}{Content-Type: application/json}{Accept: application/json}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}
+Nov 13, 2014 4:42:35 PM sun.net.www.http.HttpClient parseHTTPHeader
+FINEST: KeepAlive stream used: http://localhost:9998/detectors
+Nov 13, 2014 4:42:35 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@7900bb125 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json}{Date: Fri, 14 Nov 2014 00:42:35 GMT}{Content-Length: 361}{Server: Jetty(8.1.14.v20131031)}

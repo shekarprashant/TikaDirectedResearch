@@ -1,0 +1,14 @@
+Nov 13, 2014 4:42:38 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+Nov 13, 2014 4:42:38 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: ProxySelector Request for http://localhost:9998/version
+Nov 13, 2014 4:42:38 PM sun.net.www.http.HttpClient New
+FINEST: KeepAlive stream retrieved from the cache, sun.net.www.http.HttpClient(http://localhost:9998/tika)
+Nov 13, 2014 4:42:38 PM sun.net.www.protocol.http.HttpURLConnection plainConnect
+FINEST: Proxy used: DIRECT
+Nov 13, 2014 4:42:38 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@579914408 pairs: {GET /version HTTP/1.1: null}{Content-Type: text/plain}{Accept: text/plain}{User-Agent: Apache CXF 2.7.8}{Cache-Control: no-cache}{Pragma: no-cache}{Host: localhost:9998}{Connection: keep-alive}
+Nov 13, 2014 4:42:38 PM sun.net.www.http.HttpClient parseHTTPHeader
+FINEST: KeepAlive stream used: http://localhost:9998/version
+Nov 13, 2014 4:42:38 PM sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@782161715 pairs: {null: HTTP/1.1 200 OK}{Content-Type: text/plain}{Date: Fri, 14 Nov 2014 00:42:38 GMT}{Content-Length: 15}{Server: Jetty(8.1.14.v20131031)}
