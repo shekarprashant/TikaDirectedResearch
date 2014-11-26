@@ -168,7 +168,7 @@ public class FileDumper {
 		headerBuilder.append(",");
 		headerBuilder.append("Final type assigned by Tika");
 		headerBuilder.append("\n");
-		System.out.println(headerBuilder.toString());
+		LOG.info(headerBuilder.toString());
 		
 		File[] segmentDirs = segmentRootDir.listFiles(new FileFilter() {
 
@@ -262,7 +262,7 @@ public class FileDumper {
 							}
 						}
 						
-						System.out.println(currentBuilder.toString());
+						LOG.info(currentBuilder.toString());
 						
 					} catch (Exception e) {
 						e.printStackTrace();
