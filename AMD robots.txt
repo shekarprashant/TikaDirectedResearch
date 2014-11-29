@@ -1,0 +1,18 @@
+User-agent: gsfcbot
+Disallow: /
+
+User-agent: *
+Disallow: /*.pdf$ 
+Disallow: /DocumentBuilder/
+Disallow: /OpenAPI/
+Disallow: /Devel/
+Disallow: /temp/
+Disallow: /Images/
+Disallow: /SCCS/
+Disallow: /test/
+Disallow: /.info/
+Disallow: /Data/
+Disallow: /servlets/
+Disallow: /learn/forum/past_entries/
+Disallow: /stats/
+
